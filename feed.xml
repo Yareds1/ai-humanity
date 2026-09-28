@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>The Singularity Shift</title>
+    <link>https://ai-humanity-594.pages.dev/</link>
+    <description>Evidence-first research on AI reality, risk, society, preparedness, opportunity and human contribution.</description>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 28 Sep 2026 17:00:00 GMT</lastBuildDate>
+    <item>
+      <title>How Long Can AI Work Without Humans?</title>
+      <link>https://ai-humanity-594.pages.dev/posts/ai-agent-time-horizon.html</link>
+      <guid>https://ai-humanity-594.pages.dev/posts/ai-agent-time-horizon.html</guid>
+      <pubDate>Mon, 28 Sep 2026 17:00:00 GMT</pubDate>
+      <description>What AI agent time horizons actually measure, what they do not prove, three plausible work scenarios, and how to prepare.</description>
+    </item>
+    <item>
+      <title>What Happens When AI Can Find Software Vulnerabilities on Its Own?</title>
+      <link>https://ai-humanity-594.pages.dev/posts/ai-agents-vulnerability-discovery.html</link>
+      <guid>https://ai-humanity-594.pages.dev/posts/ai-agents-vulnerability-discovery.html</guid>
+      <pubDate>Mon, 21 Sep 2026 17:00:00 GMT</pubDate>
+      <description>Real capability, benchmark limits, and the attacker-defender race.</description>
+    </item>
+    <item>
+      <title>Will AI Take Your Job—or Change How Careers Begin?</title>
+      <link>https://ai-humanity-594.pages.dev/posts/day-02.html</link>
+      <guid>https://ai-humanity-594.pages.dev/posts/day-02.html</guid>
+      <pubDate>Thu, 17 Sep 2026 17:00:00 GMT</pubDate>
+      <description>Evidence on exposure, entry-level work, productivity and adaptation.</description>
+    </item>
+    <item>
+      <title>Could Advanced AI Pose Catastrophic Risk?</title>
+      <link>https://ai-humanity-594.pages.dev/posts/day-01.html</link>
+      <guid>https://ai-humanity-594.pages.dev/posts/day-01.html</guid>
+      <pubDate>Thu, 17 Sep 2026 17:00:00 GMT</pubDate>
+      <description>What expert assessments and current evidence can—and cannot—tell us.</description>
+    </item>
+  </channel>
+</rss>
