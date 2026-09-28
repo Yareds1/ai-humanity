@@ -5,7 +5,14 @@
     <link>https://theneuraltide.com/</link>
     <description>Evidence-first research on AI reality, risk, society, preparedness, opportunity and human contribution.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Sep 2026 17:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2026 19:43:00 GMT</lastBuildDate>
+    <item>
+      <title>NVIDIA’s New Agent Safety Platform: Why It Matters</title>
+      <link>https://theneuraltide.com/posts/nvidia-agent-safety-platform.html</link>
+      <guid>https://theneuraltide.com/posts/nvidia-agent-safety-platform.html</guid>
+      <pubDate>Mon, 28 Sep 2026 19:43:00 GMT</pubDate>
+      <description>NVIDIA is moving AI agent safety beyond model behavior into runtime and hardware controls. What is known, what remains uncertain, and what to watch next.</description>
+    </item>
     <item>
       <title>How Long Can AI Work Without Humans?</title>
       <link>https://theneuraltide.com/posts/ai-agent-time-horizon.html</link>
