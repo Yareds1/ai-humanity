@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ai-humanity-594.pages.dev/sitemap.xml
+Sitemap: https://theneuraltide.com/sitemap.xml
