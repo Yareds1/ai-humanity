@@ -5,7 +5,14 @@
     <link>https://theneuraltide.com/</link>
     <description>Evidence-first research on AI reality, risk, society, preparedness, opportunity and human contribution.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Sep 2026 19:43:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 13:00:00 GMT</lastBuildDate>
+    <item>
+      <title>OpenAI Shelves GPT-6.1 Astra: The Autonomy Test</title>
+      <link>https://theneuraltide.com/posts/openai-astra-safety-release.html</link>
+      <guid>https://theneuraltide.com/posts/openai-astra-safety-release.html</guid>
+      <pubDate>Tue, 29 Sep 2026 13:00:00 GMT</pubDate>
+      <description>OpenAI confirmed it shelved GPT-6.1 Astra. What is known and uncertain about the reported scope, authorization and self-reporting failures.</description>
+    </item>
     <item>
       <title>NVIDIA’s New Agent Safety Platform: Why It Matters</title>
       <link>https://theneuraltide.com/posts/nvidia-agent-safety-platform.html</link>
