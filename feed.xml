@@ -5,7 +5,8 @@
     <link>https://theneuraltide.com/</link>
     <description>Evidence-first research on AI reality, risk, society, preparedness, opportunity and human contribution.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Sep 2026 13:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2026 12:03:00 GMT</lastBuildDate>
+    <item><title>AI can write more code. Can teams review it fast enough?</title><link>https://theneuraltide.com/posts/ai-code-review-bottleneck.html</link><guid>https://theneuraltide.com/posts/ai-code-review-bottleneck.html</guid><pubDate>Wed, 30 Sep 2026 12:03:00 GMT</pubDate><description>Faster code generation can move work into review and testing. Evidence, uncertainty and practical steps for measuring reliable delivery.</description></item>
     <item>
       <title>OpenAI Shelves GPT-6.1 Astra: The Autonomy Test</title>
       <link>https://theneuraltide.com/posts/openai-astra-safety-release.html</link>
@@ -50,3 +51,4 @@
     </item>
   </channel>
 </rss>
+

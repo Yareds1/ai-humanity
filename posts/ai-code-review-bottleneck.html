@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI can write more code. Can teams review it fast enough? — The Neural Tide</title>
+  <meta name="description" content="Faster code generation can move the bottleneck into review and testing. Does a team deliver more reliable, useful software after the whole workflow is counted?">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://theneuraltide.com/posts/ai-code-review-bottleneck.html">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../publisher.css">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="The Neural Tide">
+  <meta property="og:title" content="AI can write more code. Can teams review it fast enough?">
+  <meta property="og:description" content="Faster code generation can move the bottleneck into review and testing. Does a team deliver more reliable, useful software after the whole workflow is counted?">
+  <meta property="og:url" content="https://theneuraltide.com/posts/ai-code-review-bottleneck.html">
+  <meta name="twitter:card" content="summary">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "AI can write more code. Can teams review it fast enough?", "description": "Faster code generation can move the bottleneck into review and testing. Does a team deliver more reliable, useful software after the whole workflow is counted?", "datePublished": "2026-09-30T07:03:00-05:00", "dateModified": "2026-09-30T07:03:00-05:00", "mainEntityOfPage": "https://theneuraltide.com/posts/ai-code-review-bottleneck.html", "author": {"@type": "Organization", "name": "The Neural Tide"}, "publisher": {"@type": "Organization", "name": "The Neural Tide"}}</script>
+<style>
+.workflow-table{width:100%;border-collapse:collapse;background:#fffdf8;margin:24px 0;font-size:16px;table-layout:fixed}
+.workflow-table caption{text-align:left;font-weight:700;padding:12px 0;color:#3568ff}
+.workflow-table th,.workflow-table td{text-align:left;vertical-align:top;border-bottom:1px solid #d7d2c7;padding:14px;overflow-wrap:anywhere}
+.workflow-table th{background:#edf4ff}.workflow-table th:first-child{width:32%}
+@media(max-width:760px){.workflow-table{font-size:14px}.workflow-table th,.workflow-table td{padding:10px 8px}}
+</style></head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="../">THE NEURAL <span>TIDE</span></a>
+    <nav><a href="../#latest">Latest</a><a href="../#archive">Research</a><a href="../#futures">Futures</a><a href="../editorial.html">Method</a></nav>
+  </header>
+
+  <main class="article-shell">
+<section class="article-hero">
+<p class="eyebrow">RESEARCH BRIEF · SOFTWARE &amp; WORK · SEPTEMBER 30, 2026</p>
+<h1>AI can write more code. Can teams review it fast enough?</h1>
+<p class="article-deck">Faster code generation can move the bottleneck into review and testing. Does a team deliver more reliable, useful software after the whole workflow is counted?</p>
+<div class="method-note"><strong>Evidence standard:</strong> One observational company study and METR’s experiment-design update. Output is a useful signal; it is not a complete measure of delivery value.</div>
+</section>
+<article class="article-body">
+<p>A developer finishes a change faster with AI. That is a useful gain. The change still needs review, tests, integration and maintenance. If those stages accumulate a queue, faster authoring does not automatically produce faster delivery.</p>
+<h2>Known: output and review load can rise together</h2>
+<p>A preprint submitted on <strong>July 2, 2026</strong> followed 802 developers and 196,212 pull requests from January 2024 through April 2026 at a mid-sized, AI-forward company. The company sought to double merged pull requests per engineer. By April, that metric reached <strong>2.09 times</strong> its pre-mandate baseline.</p>
+<p>Per-reviewer load roughly doubled, automated review overtook human review, and merge and revert rates stayed broadly steady. Gains were concentrated in newer code. Adoption was not randomized: this is evidence from a favorable setting, not proof that AI doubles business value everywhere. <a href="https://arxiv.org/html/2607.01904v1">Read the primary study →</a></p>
+<h2>Known: measuring productivity has selection problems</h2>
+<p>In its <strong>February 24, 2026</strong> update, METR explained why its follow-up developer experiment could not reliably estimate current AI gains. Developers who wanted to keep using AI were less willing to participate in work that might prohibit it. Some withheld tasks they expected AI to accelerate. Lower participant pay also affected selection, while concurrent agents made time accounting difficult.</p>
+<p>METR considered larger speedups plausible, but described its data as weak evidence for their size. That is a measurement limitation, not evidence that the benefit is zero. <a href="https://metr.org/blog/2026-02-24-uplift-update/">Read METR’s update →</a></p>
+<h2>Uncertain: more merged code is not a standard measure of value</h2>
+<p>Pull requests vary in size, difficulty and purpose. Stable revert rates do not establish long-term maintainability, security or defect costs. The company study neither shows that AI inevitably lowers quality nor establishes a general effect on QA staffing. Broader evidence needs to follow changes through production and maintenance.</p>
+<div class="callout"><strong>Measure what gets delivered.</strong><p>A rising merge count can coexist with useful progress, extra rework, or both. Teams need release outcomes alongside output counts to tell the difference.</p></div>
+<h2>Speculation: verification may become a larger share of work</h2>
+<p>If authoring gets cheaper faster than verification, teams may spend more effort defining expected behavior, selecting tests and deciding whether a change is safe to ship. This is a conditional scenario, not a forecast of guaranteed job growth. AI review and testing could absorb some workload; measure them by consequential errors caught and missed, as well as noise and human effort.</p>
+<table class="workflow-table">
+<caption>A whole-workflow checklist: practical guidance, not measured study results</caption>
+<thead><tr><th scope="col">Stage</th><th scope="col">Question to answer</th></tr></thead>
+<tbody>
+<tr><th scope="row">Author</th><td>Does the change solve the intended problem, and can its owner explain it?</td></tr>
+<tr><th scope="row">Review</th><td>How much waiting, human effort and rework does approval require?</td></tr>
+<tr><th scope="row">Test &amp; integrate</th><td>Do critical behaviors and dependencies still work?</td></tr>
+<tr><th scope="row">Deploy &amp; maintain</th><td>What happens to defects, incidents and later change costs?</td></tr>
+</tbody></table>
+<h2>Signals to watch</h2>
+<ul><li>Review queue size and time from review-ready to deployment.</li><li>Human review effort and rework per change, accounting for size and risk.</li><li>Production defects and incidents after release.</li><li>Whether gains persist in mature repositories.</li><li>Whether automated review catches consequential errors without excessive noise.</li></ul>
+<h2>How to prepare</h2>
+<div class="action-grid">
+<section class="action-card"><h3>Developers</h3><p>Keep changes small, understand accepted code, and supply intent, assumptions and evidence. Make the reviewer’s job easier.</p></section>
+<section class="action-card"><h3>QA teams</h3><p>Prioritize critical behavior and integration risks. Use tests whose expected results come from requirements rather than simply copying the implementation. Track escaped defects and rework.</p></section>
+<section class="action-card"><h3>Leaders</h3><p>Compare the whole workflow with a baseline: lead time, review effort and release outcomes alongside output. Check whether saved authoring time survives downstream.</p></section>
+</div>
+<h2>Our read</h2>
+<p>The useful question is how much reliable, valuable software a team can deliver with its available review and testing capacity. The case study reports substantial output gains in favorable conditions and more work moving downstream. Our practical inference: strengthen verification and measure the whole delivery path.</p>
+<h2>Primary sources</h2>
+<ul class="source-list"><li><a href="https://arxiv.org/abs/2607.01904v1">He et al. — AI Writes Faster Than Humans Can Review (July 2, 2026, v1 preprint)</a></li><li><a href="https://metr.org/blog/2026-02-24-uplift-update/">METR — We are Changing our Developer Productivity Experiment Design (February 24, 2026)</a></li></ul>
+<div class="article-disclosure"><strong>Evidence note · checked September 30, 2026:</strong> We rechecked the paper’s v1 abstract, full text and submission history, and METR’s original update. The arXiv history lists v1; the paper is a preprint. The studies use different populations and methods and should not be combined into one productivity estimate. Known labels describe reported findings; Uncertain and Speculation separate open questions from conditional scenarios. The checklist and preparation are our guidance.</div>
+<a class="back-link" href="../">← Back to The Neural Tide</a>
+</article></main>
+<footer class="publisher-footer"><div><div class="logo">THE NEURAL <span>TIDE</span></div><p>Understand. Prepare. Contribute.</p></div><div class="footer-links"><a href="../about.html">About</a><a href="../editorial.html">Editorial standards</a><a href="../privacy.html">Privacy</a></div></footer>
+</body>
+</html>
