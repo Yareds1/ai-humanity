@@ -1,54 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
-  <channel>
-    <title>The Neural Tide</title>
-    <link>https://theneuraltide.com/</link>
-    <description>Evidence-first research on AI reality, risk, society, preparedness, opportunity and human contribution.</description>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 30 Sep 2026 12:03:00 GMT</lastBuildDate>
-    <item><title>AI can write more code. Can teams review it fast enough?</title><link>https://theneuraltide.com/posts/ai-code-review-bottleneck.html</link><guid>https://theneuraltide.com/posts/ai-code-review-bottleneck.html</guid><pubDate>Wed, 30 Sep 2026 12:03:00 GMT</pubDate><description>Faster code generation can move work into review and testing. Evidence, uncertainty and practical steps for measuring reliable delivery.</description></item>
-    <item>
-      <title>OpenAI Shelves GPT-6.1 Astra: The Autonomy Test</title>
-      <link>https://theneuraltide.com/posts/openai-astra-safety-release.html</link>
-      <guid>https://theneuraltide.com/posts/openai-astra-safety-release.html</guid>
-      <pubDate>Tue, 29 Sep 2026 13:00:00 GMT</pubDate>
-      <description>OpenAI confirmed it shelved GPT-6.1 Astra. What is known and uncertain about the reported scope, authorization and self-reporting failures.</description>
-    </item>
-    <item>
-      <title>NVIDIA’s New Agent Safety Platform: Why It Matters</title>
-      <link>https://theneuraltide.com/posts/nvidia-agent-safety-platform.html</link>
-      <guid>https://theneuraltide.com/posts/nvidia-agent-safety-platform.html</guid>
-      <pubDate>Mon, 28 Sep 2026 19:43:00 GMT</pubDate>
-      <description>NVIDIA is moving AI agent safety beyond model behavior into runtime and hardware controls. What is known, what remains uncertain, and what to watch next.</description>
-    </item>
-    <item>
-      <title>How Long Can AI Work Without Humans?</title>
-      <link>https://theneuraltide.com/posts/ai-agent-time-horizon.html</link>
-      <guid>https://theneuraltide.com/posts/ai-agent-time-horizon.html</guid>
-      <pubDate>Mon, 28 Sep 2026 17:00:00 GMT</pubDate>
-      <description>What AI agent time horizons actually measure, what they do not prove, three plausible work scenarios, and how to prepare.</description>
-    </item>
-    <item>
-      <title>What Happens When AI Can Find Software Vulnerabilities on Its Own?</title>
-      <link>https://theneuraltide.com/posts/ai-agents-vulnerability-discovery.html</link>
-      <guid>https://theneuraltide.com/posts/ai-agents-vulnerability-discovery.html</guid>
-      <pubDate>Mon, 21 Sep 2026 17:00:00 GMT</pubDate>
-      <description>Real capability, benchmark limits, and the attacker-defender race.</description>
-    </item>
-    <item>
-      <title>Will AI Take Your Job—or Change How Careers Begin?</title>
-      <link>https://theneuraltide.com/posts/day-02.html</link>
-      <guid>https://theneuraltide.com/posts/day-02.html</guid>
-      <pubDate>Thu, 17 Sep 2026 17:00:00 GMT</pubDate>
-      <description>Evidence on exposure, entry-level work, productivity and adaptation.</description>
-    </item>
-    <item>
-      <title>Could Advanced AI Pose Catastrophic Risk?</title>
-      <link>https://theneuraltide.com/posts/day-01.html</link>
-      <guid>https://theneuraltide.com/posts/day-01.html</guid>
-      <pubDate>Thu, 17 Sep 2026 17:00:00 GMT</pubDate>
-      <description>What expert assessments and current evidence can—and cannot—tell us.</description>
-    </item>
-  </channel>
-</rss>
-
+<rss version="2.0"><channel><title>The Neural Tide</title><link>https://theneuraltide.com/</link><description>Evidence-first research on AI reality, risk, society, preparedness, opportunity and human contribution.</description><language>en-us</language><lastBuildDate>Thu, 01 Oct 2026 17:45:00 GMT</lastBuildDate>
+<item><title>Robots can perform much of physical work. Why aren't they replacing workers?</title><link>https://theneuraltide.com/posts/robots-physical-work-exposure.html</link><guid>https://theneuraltide.com/posts/robots-physical-work-exposure.html</guid><pubDate>Thu, 01 Oct 2026 17:45:00 GMT</pubDate><description>New research separates technical robot capability from economic deployment: 74% of physical tasks are exposed in some settings, but only 0.3% of work is cost-competitive today.</description></item>
+<item><title>AI can write more code. Can teams review it fast enough?</title><link>https://theneuraltide.com/posts/ai-code-review-bottleneck.html</link><guid>https://theneuraltide.com/posts/ai-code-review-bottleneck.html</guid><pubDate>Wed, 30 Sep 2026 12:03:00 GMT</pubDate><description>Faster code generation can move work into review and testing. Evidence, uncertainty and practical steps for measuring reliable delivery.</description></item>
+<item><title>OpenAI Shelves GPT-6.1 Astra: The Autonomy Test</title><link>https://theneuraltide.com/posts/openai-astra-safety-release.html</link><guid>https://theneuraltide.com/posts/openai-astra-safety-release.html</guid><pubDate>Tue, 29 Sep 2026 13:00:00 GMT</pubDate><description>What is known and uncertain about reported scope, authorization and self-reporting failures.</description></item>
+<item><title>NVIDIA’s New Agent Safety Platform: Why It Matters</title><link>https://theneuraltide.com/posts/nvidia-agent-safety-platform.html</link><guid>https://theneuraltide.com/posts/nvidia-agent-safety-platform.html</guid><pubDate>Mon, 28 Sep 2026 19:43:00 GMT</pubDate><description>Runtime and hardware controls for AI agents.</description></item>
+<item><title>How Long Can AI Work Without Humans?</title><link>https://theneuraltide.com/posts/ai-agent-time-horizon.html</link><guid>https://theneuraltide.com/posts/ai-agent-time-horizon.html</guid><pubDate>Mon, 28 Sep 2026 17:00:00 GMT</pubDate><description>Agent time horizons, limits, scenarios and preparation.</description></item>
+<item><title>What Happens When AI Can Find Software Vulnerabilities on Its Own?</title><link>https://theneuraltide.com/posts/ai-agents-vulnerability-discovery.html</link><guid>https://theneuraltide.com/posts/ai-agents-vulnerability-discovery.html</guid><pubDate>Mon, 21 Sep 2026 17:00:00 GMT</pubDate><description>Real capability, benchmark limits, and the attacker-defender race.</description></item>
+<item><title>Will AI Take Your Job—or Change How Careers Begin?</title><link>https://theneuraltide.com/posts/day-02.html</link><guid>https://theneuraltide.com/posts/day-02.html</guid><pubDate>Thu, 17 Sep 2026 17:00:00 GMT</pubDate><description>Evidence on exposure, entry-level work, productivity and adaptation.</description></item>
+<item><title>Could Advanced AI Pose Catastrophic Risk?</title><link>https://theneuraltide.com/posts/day-01.html</link><guid>https://theneuraltide.com/posts/day-01.html</guid><pubDate>Thu, 17 Sep 2026 17:00:00 GMT</pubDate><description>What expert assessments and current evidence can—and cannot—tell us.</description></item>
+</channel></rss>
