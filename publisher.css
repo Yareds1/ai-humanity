@@ -250,3 +250,34 @@ body:not(.new-home) .data-table td{border-color:#dce5f2}
 .new-home .tk-data-key i{width:8px;height:8px;border-radius:50%;background:#60a5fa;box-shadow:0 0 0 4px rgba(96,165,250,.14);flex:0 0 auto}
 .new-home .tk-data-key strong{color:#fff}
 @media(max-width:600px){.new-home .toolkit-dashboard .tk-bar-row{grid-template-columns:108px 1fr 43px}.new-home .tk-chart-footer{margin-left:116px;margin-right:43px}.new-home .toolkit-dashboard .tk-cat-grid{grid-template-columns:1fr 1fr}}
+
+
+/* Rich Toolkit — logos, traffic metrics, color, motion */
+.new-home .tk-reach{margin:18px 0 20px;padding:27px 28px 24px;border:1px solid #d8e4f3;border-radius:18px;background:linear-gradient(135deg,#071a3d 0%,#102e67 58%,#17478d 100%);box-shadow:0 18px 45px rgba(11,31,77,.14);overflow:hidden;position:relative}
+.new-home .tk-reach:after{content:"";position:absolute;width:240px;height:240px;border-radius:50%;right:-90px;top:-130px;background:radial-gradient(circle,rgba(96,165,250,.22),rgba(96,165,250,0) 70%);pointer-events:none}
+.new-home .tk-reach-head{display:flex;justify-content:space-between;align-items:flex-start;gap:18px;margin-bottom:22px}
+.new-home .tk-reach .tk-kicker{color:#8fc0ff}.new-home .tk-reach h3{margin:0;color:#fff;font-size:25px;letter-spacing:-.025em}
+.new-home .tk-log-label{font-size:9px;letter-spacing:.1em;font-weight:800;color:#a9c9f5;border:1px solid rgba(169,201,245,.25);border-radius:999px;padding:6px 9px}
+.new-home .tk-reach-bars{display:grid;grid-template-columns:1fr 1fr;gap:11px 32px;position:relative;z-index:1}
+.new-home .tk-reach-bars>div{display:grid;grid-template-columns:92px 1fr 55px;gap:10px;align-items:center}
+.new-home .tk-reach-bars span{color:#dce9fb;font-size:10px;font-weight:700}
+.new-home .tk-reach-bars i{display:block;height:8px;border-radius:999px;background:rgba(255,255,255,.11);overflow:hidden}
+.new-home .tk-reach-bars em{display:block;width:var(--reach);height:100%;border-radius:999px;background:var(--brand);animation:tkGrow .9s cubic-bezier(.2,.7,.2,1) both;transform-origin:left;box-shadow:0 0 14px color-mix(in srgb,var(--brand) 55%,transparent)}
+.new-home .tk-reach-bars b{color:#fff;font-size:10px;text-align:right;font-variant-numeric:tabular-nums}
+.new-home .tk-reach .tk-chart-note{color:#9fb5d3;margin-top:19px}
+@keyframes tkGrow{from{transform:scaleX(0);opacity:.35}to{transform:scaleX(1);opacity:1}}
+.new-home .tk-rich-table tbody tr{background:linear-gradient(90deg,var(--tint) 0%,#fff 15%,#fff 100%);transition:transform .16s ease,box-shadow .16s ease,background .16s ease}
+.new-home .tk-rich-table tbody tr:hover{background:linear-gradient(90deg,var(--tint) 0%,#fff 36%);box-shadow:inset 4px 0 0 var(--brand),0 8px 22px rgba(23,63,138,.07)}
+.new-home .tk-rich-table td:first-child{color:var(--brand)}
+.new-home .tk-product{display:flex;align-items:center;gap:10px;min-width:145px}
+.new-home .tk-logo{width:38px;height:38px;display:grid;place-items:center;flex:0 0 38px;border-radius:11px;background:#fff;border:1px solid color-mix(in srgb,var(--brand) 22%,#e3eaf5);box-shadow:0 5px 14px rgba(16,33,59,.08);transition:transform .18s ease,box-shadow .18s ease}
+.new-home .tk-logo img{width:23px;height:23px;object-fit:contain;display:block}
+.new-home .tk-rich-table tr:hover .tk-logo{transform:translateY(-2px) scale(1.06);box-shadow:0 8px 18px color-mix(in srgb,var(--brand) 18%,transparent)}
+.new-home .tk-product strong{font-size:14px;color:#10213b}
+.new-home .tk-metric{display:inline-flex;flex-direction:column;gap:2px;color:var(--brand);font-size:13px;font-weight:850;font-variant-numeric:tabular-nums}
+.new-home .tk-metric small{font-size:7px;letter-spacing:.08em;color:#8794a6;font-weight:800}
+.new-home .tk-rich-table .tk-pick{background:var(--tint);color:var(--brand);border-color:color-mix(in srgb,var(--brand) 20%,#dbe5f3)}
+.new-home .tk-source-note{padding:12px 16px;background:#f7f9fc;border-top:1px solid #e3eaf4;color:#7b899c;font-size:9px;line-height:1.5}
+@media(max-width:900px){.new-home .tk-reach-bars{grid-template-columns:1fr}.new-home .tk-reach{padding:23px 20px}.new-home .tk-rich-table{min-width:1040px}}
+@media(max-width:600px){.new-home .tk-reach-head{display:block}.new-home .tk-log-label{display:inline-block;margin-top:10px}.new-home .tk-reach-bars>div{grid-template-columns:82px 1fr 48px}.new-home .tk-reach-bars{gap:10px}.new-home .tk-reach h3{font-size:22px}}
+@media(prefers-reduced-motion:reduce){.new-home .tk-reach-bars em,.new-home .tk-logo,.new-home .tk-rich-table tbody tr{animation:none;transition:none}}
