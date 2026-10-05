@@ -281,3 +281,27 @@ body:not(.new-home) .data-table td{border-color:#dce5f2}
 @media(max-width:900px){.new-home .tk-reach-bars{grid-template-columns:1fr}.new-home .tk-reach{padding:23px 20px}.new-home .tk-rich-table{min-width:1040px}}
 @media(max-width:600px){.new-home .tk-reach-head{display:block}.new-home .tk-log-label{display:inline-block;margin-top:10px}.new-home .tk-reach-bars>div{grid-template-columns:82px 1fr 48px}.new-home .tk-reach-bars{gap:10px}.new-home .tk-reach h3{font-size:22px}}
 @media(prefers-reduced-motion:reduce){.new-home .tk-reach-bars em,.new-home .tk-logo,.new-home .tk-rich-table tbody tr{animation:none;transition:none}}
+
+
+/* Homepage QA + accessibility + responsive polish */
+.new-home .skip-link{position:fixed;left:16px;top:12px;z-index:9999;padding:10px 14px;border-radius:9px;background:#0b1f4d;color:#fff;font-size:13px;font-weight:800;text-decoration:none;transform:translateY(-160%);transition:transform .15s ease}
+.new-home .skip-link:focus{transform:translateY(0)}
+.new-home .sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+.new-home section[id]{scroll-margin-top:82px}
+.new-home a:focus-visible,.new-home button:focus-visible{outline:3px solid #60a5fa;outline-offset:3px;border-radius:6px}
+.new-home .toolkit-table-wrap{position:relative;scrollbar-width:thin;scrollbar-color:#9bb8df #edf3fb}
+.new-home .toolkit-table-wrap::-webkit-scrollbar{height:9px}.new-home .toolkit-table-wrap::-webkit-scrollbar-track{background:#edf3fb}.new-home .toolkit-table-wrap::-webkit-scrollbar-thumb{background:#9bb8df;border-radius:999px}
+.new-home .table-scroll-hint{display:none;position:sticky;left:0;width:max-content;margin:0 0 -1px auto;padding:7px 11px;background:#eaf2ff;color:#1d5fc4;border-left:1px solid #d2e1f4;border-bottom:1px solid #d2e1f4;border-radius:0 0 0 9px;font-size:9px;font-weight:850;letter-spacing:.05em;z-index:3}
+.new-home .tk-source-note a{color:#2563eb;font-weight:750;text-decoration:none}.new-home .tk-source-note a:hover{text-decoration:underline}
+.new-home .story-card{transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}.new-home .story-card:hover{transform:translateY(-3px)}
+@media(max-width:900px){.new-home .site-header nav{max-width:68vw;overflow-x:auto;overscroll-behavior-inline:contain;scrollbar-width:none;white-space:nowrap}.new-home .site-header nav::-webkit-scrollbar{display:none}.new-home .table-scroll-hint{display:block}}
+@media(max-width:600px){.new-home .site-header{gap:14px}.new-home .site-header nav{max-width:62vw}.new-home .toolkit-head h2{font-size:clamp(38px,12vw,52px)}.new-home .tk-rich-table td{padding-top:15px;padding-bottom:15px}}
+
+/* Run graph motion when the section is actually seen, not on initial page load */
+@media(prefers-reduced-motion:no-preference){
+.new-home .toolkit-section.motion-ready .tk-reach-bars em,
+.new-home .toolkit-section.motion-ready .tk-track i{animation:none;transform:scaleX(0);opacity:.38;transform-origin:left}
+.new-home .toolkit-section.motion-ready.is-visible .tk-reach-bars em{animation:tkGrow .8s cubic-bezier(.2,.7,.2,1) both}
+.new-home .toolkit-section.motion-ready.is-visible .tk-track i{animation:tkGrow .7s cubic-bezier(.2,.7,.2,1) both}
+.new-home .toolkit-section.motion-ready.is-visible .tk-bar-row:nth-child(2) i{animation-delay:.05s}.new-home .toolkit-section.motion-ready.is-visible .tk-bar-row:nth-child(3) i{animation-delay:.1s}.new-home .toolkit-section.motion-ready.is-visible .tk-bar-row:nth-child(4) i{animation-delay:.15s}.new-home .toolkit-section.motion-ready.is-visible .tk-bar-row:nth-child(5) i{animation-delay:.2s}.new-home .toolkit-section.motion-ready.is-visible .tk-bar-row:nth-child(6) i{animation-delay:.25s}
+}
