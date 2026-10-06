@@ -4,7 +4,7 @@ A small daily publishing project exploring AI reality, risk, society, preparedne
 
 ## The rule
 
-One question → one research brief → one video → one website post.
+One question → one sourced research brief → one website post.
 
 ## Local preview
 
@@ -14,5 +14,4 @@ Open `index.html` in a browser.
 
 1. Replace the Day 1 placeholder with sourced research.
 2. Connect the site to a simple deployment platform.
-3. Add the YouTube channel link.
-4. Establish the daily publishing workflow before adding complexity.
+3. Establish the daily publishing workflow before adding complexity.
