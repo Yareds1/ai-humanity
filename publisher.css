@@ -305,3 +305,44 @@ body:not(.new-home) .data-table td{border-color:#dce5f2}
 .new-home .toolkit-section.motion-ready.is-visible .tk-track i{animation:tkGrow .7s cubic-bezier(.2,.7,.2,1) both}
 .new-home .toolkit-section.motion-ready.is-visible .tk-bar-row:nth-child(2) i{animation-delay:.05s}.new-home .toolkit-section.motion-ready.is-visible .tk-bar-row:nth-child(3) i{animation-delay:.1s}.new-home .toolkit-section.motion-ready.is-visible .tk-bar-row:nth-child(4) i{animation-delay:.15s}.new-home .toolkit-section.motion-ready.is-visible .tk-bar-row:nth-child(5) i{animation-delay:.2s}.new-home .toolkit-section.motion-ready.is-visible .tk-bar-row:nth-child(6) i{animation-delay:.25s}
 }
+
+/* Consistent editorial layout and legible chart annotations */
+.site-header nav{align-items:center;gap:22px}
+.publisher-footer .logo{display:inline-block}.publisher-footer .footer-links{font-size:14px;gap:20px}
+.new-home .hero-live{min-height:0;padding-top:68px;padding-bottom:60px}
+.new-home .hero h1{font-size:clamp(48px,6.2vw,82px);line-height:1.02;max-width:1040px;margin:20px 0 24px}
+.new-home .hero-copy{max-width:720px;font-size:18px}
+.new-home .hero-actions{margin-top:26px}.new-home .signal-row{margin-top:34px;gap:12px;flex-wrap:wrap}.new-home .editor-line{margin-top:20px;color:#526782}
+.new-home .futures h2 em{color:#bfdbfe}.new-home .futures-head>p:last-child{color:#dbeafe}
+.new-home .future-btn{color:#fff}.new-home .future-btn small,.new-home .future-btn span{color:#dbeafe}
+.new-home .future-btn.active{box-shadow:inset 4px 0 #bfdbfe}
+.new-home .prepare-box .eyebrow{color:#27559b}.new-home .future-panel .prob-note{color:#526782!important}
+.new-home .meters label b{color:#10213b}
+.new-home .tk-kicker,.new-home .tk-chart-unit,.new-home .tk-log-label{font-size:12px}
+.new-home .tk-chart-unit,.new-home .tk-chart-sub,.new-home .tk-chart-note,.new-home .tk-chart-footer,.new-home .tk-source-note{color:#526782}
+.new-home .tk-chart-sub,.new-home .tk-chart-note,.new-home .tk-source-note,.new-home .tk-data-key{font-size:13px;line-height:1.6}
+.new-home .toolkit-dashboard .tk-bar-row>span,.new-home .toolkit-dashboard .tk-bar-row>b{font-size:14px}
+.new-home .tk-chart-footer{font-size:12px}
+.new-home .tk-cat span{font-size:11px}.new-home .tk-cat small{font-size:13px;color:#445873}
+.new-home .tk-reach-bars span,.new-home .tk-reach-bars b{font-size:13px}
+.new-home .tk-reach .tk-chart-note{color:#c6d9f2}.new-home .tk-metric small{font-size:10px;color:#526782}
+.new-home .tk-rich-table{font-size:14px}.new-home .tk-pick,.new-home .table-scroll-hint{font-size:11px}
+@media(max-width:760px){
+ .site-header,.new-home .site-header{flex-direction:column;align-items:flex-start;gap:12px}
+ .site-header nav,.new-home .site-header nav,body.buying-guide .site-header nav{max-width:100%;width:100%;gap:8px;overflow-x:auto;white-space:nowrap}
+ .new-home .hero-live{min-height:0;padding-top:42px;padding-bottom:42px}
+ .new-home .hero h1{font-size:clamp(42px,10vw,64px);line-height:1.04}
+ .new-home .signal-row{margin-top:26px}.new-home .hero-copy{font-size:17px}
+ .publisher-footer{flex-direction:column;gap:24px}.publisher-footer .footer-links{width:100%;gap:16px;flex-wrap:wrap;white-space:normal;overflow:visible}
+ .new-home .toolkit-dashboard .tk-bar-row{grid-template-columns:116px minmax(0,1fr) 42px;gap:8px}
+ .new-home .toolkit-dashboard .tk-bar-row>span,.new-home .toolkit-dashboard .tk-bar-row>b{font-size:13px}
+ .new-home .tk-chart-footer{margin-left:124px;margin-right:50px}
+ .new-home .tk-rich-table{min-width:0;display:block}.new-home .tk-rich-table caption{display:block}
+ .new-home .tk-rich-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+ .new-home .tk-rich-table tbody{display:grid;gap:16px;padding:16px}
+ .new-home .tk-rich-table tr{display:block;border:1px solid #d9e3f3;border-radius:16px;overflow:hidden;background:var(--tint)}
+ .new-home .tk-rich-table td{display:block;min-width:0;padding:12px 16px;border-bottom:1px solid #d9e3f3}
+ .new-home .tk-rich-table td:first-child{display:none}.new-home .tk-rich-table td:nth-child(2){background:#fff}
+ .new-home .tk-rich-table td:not(:nth-child(2)):before{content:attr(data-label);display:block;font-size:11px;font-weight:750;text-transform:uppercase;letter-spacing:.06em;color:#526782;margin-bottom:5px}
+ .new-home .tk-rich-table td:last-child{border-bottom:0}.new-home .table-scroll-hint{display:none}
+}

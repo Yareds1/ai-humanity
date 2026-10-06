@@ -59,3 +59,31 @@
 @media(max-width:950px){.chart-grid{grid-template-columns:1fr}.price-row{grid-template-columns:155px 1fr 54px}.axis-labels{margin-left:165px}.chart-unit{white-space:normal}}
 @media(max-width:700px){.buying-guide .article-shell{padding:30px 16px 60px}.buying-guide .article-hero{padding:28px 24px;border-radius:22px}.buying-guide .article-hero h1{font-size:39px}.hero-tags span{font-size:12px}.decision-strip,.tools-grid{grid-template-columns:1fr}.decision-strip{gap:10px}.decision-strip section{padding:18px}.cost-dashboard{padding:22px 16px;border-radius:22px}.dashboard-head{display:block}.chart-unit{display:inline-block;margin-top:16px}.monthly-chart,.tier-chart{padding:21px 16px}.price-row{grid-template-columns:112px 1fr 46px;gap:8px}.price-row>span{font-size:12px}.axis-labels{margin-left:120px;margin-right:54px}.buying-guide .article-body .cost-dashboard h2{font-size:28px}.buying-guide .tool-entry{padding:25px 22px}.buying-guide .comparison-heading h2{font-size:32px}.closing-read{padding:24px}.buying-guide .site-header nav{gap:14px;overflow-x:auto;white-space:nowrap;max-width:56vw}.buying-guide .site-header .logo{font-size:15px}}
 @media(prefers-reduced-motion:reduce){.price-row,.tool-entry,.subscription-table tr{transition:none!important}}
+
+/* Buying guide reading hierarchy */
+.buying-guide .article-body .cost-dashboard .price-row{color:#eaf4ff;text-decoration:none;border-radius:6px;padding:3px 0}
+.buying-guide .article-body .cost-dashboard .price-row:hover{color:#fff;opacity:1;text-decoration:underline;text-underline-offset:4px}
+.price-row>span{font-size:14px}.chart-unit,.tier-label>b,.axis-labels{font-size:13px;color:#c6dcf9}
+.buying-guide .cost-dashboard .chart-note{font-size:13px;color:#c6dcf9}
+.buying-guide .tier-group p{font-size:14px}
+.buying-guide .article-body>p,.buying-guide .article-body>.method-note{max-width:760px}
+.closing-read>p,.closing-read>h2{max-width:720px;margin-left:auto;margin-right:auto}
+.tool-jump{display:block;background:#fff;border:1px solid #d9e3f3;border-radius:20px;padding:24px;margin-top:40px}
+.tool-jump>.eyebrow{margin:0 0 16px;color:#315da8}.tool-jump>div{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.buying-guide .tool-jump a{padding:12px;border-radius:12px;background:#f3f7ff;font-size:14px;font-weight:700;line-height:1.4;text-decoration:none;color:#163c73}
+.tool-jump a span{display:block;font-size:11px;letter-spacing:.08em;color:#536d91;margin-bottom:6px}.buying-guide .tool-jump a:hover{background:#e4eeff}
+.buying-guide .tool-entry .tool-verdict{padding:16px 18px;border-radius:14px;background:var(--tint);border-left:3px solid var(--brand)}
+.buying-guide .tool-entry .vendor-sources{font-size:14px!important}
+@media(max-width:950px){.tool-jump>div{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:700px){
+ .tool-jump{padding:20px}.tool-jump>div{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .buying-guide .subscription-table{min-width:0;display:block}.buying-guide .subscription-table caption{display:block}
+ .buying-guide .subscription-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+ .buying-guide .subscription-table tbody{display:grid;gap:14px;padding:14px}
+ .buying-guide .subscription-table tr{display:block;border:1px solid #d9e3f3;border-top:4px solid var(--brand);border-radius:14px;overflow:hidden}
+ .buying-guide .subscription-table th,.buying-guide .subscription-table td{display:block;min-width:0;padding:14px 16px}
+ .buying-guide .subscription-table td:before{content:attr(data-label);display:block;font-size:11px;text-transform:uppercase;letter-spacing:.06em;font-weight:750;color:#526782;margin-bottom:5px}
+ .buying-guide .subscription-table td:last-child{border-bottom:0}.buying-guide .comparison-wrap{overflow:visible}
+ .price-row{grid-template-columns:105px minmax(0,1fr) 48px;gap:7px}.price-row>span{font-size:13px}
+ .axis-labels{margin-left:112px;margin-right:55px}.monthly-chart,.tier-chart{padding:20px 12px}
+}
