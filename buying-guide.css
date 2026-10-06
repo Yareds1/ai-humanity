@@ -18,11 +18,11 @@
 .cost-dashboard{background:#0c1e43;color:#fff;border-radius:26px;padding:32px;margin:40px 0 52px;box-shadow:0 22px 55px #12336624}
 .dashboard-head{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:26px}
 .buying-guide .cost-dashboard .eyebrow{color:#97c3ff;margin:0 0 8px}
-.buying-guide .cost-dashboard h2{color:white;margin:0;font-size:32px;line-height:1.15;letter-spacing:-.025em}
+.buying-guide .article-body .cost-dashboard h2{color:white;margin:0;font-size:32px;line-height:1.15;letter-spacing:-.025em}
 .chart-unit{font-size:12px;border:1px solid #395783;border-radius:999px;padding:8px 12px;color:#c3d8f5;white-space:nowrap}
 .chart-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:28px}
 .monthly-chart,.tier-chart{padding:24px;background:#ffffff09;border:1px solid #ffffff18;border-radius:18px;min-width:0}
-.buying-guide .cost-dashboard h3{color:white;font-size:20px;margin:0 0 7px}
+.buying-guide .article-body .cost-dashboard h3{color:white;font-size:20px;margin:0 0 7px}
 .buying-guide .cost-dashboard p{color:#bdd0eb;font-size:14px;line-height:1.6;margin:0 0 20px}
 .price-bars{display:grid;gap:17px;margin-top:28px}
 .price-row{display:grid;grid-template-columns:135px minmax(0,1fr) 48px;gap:10px;align-items:center;color:white;transition:opacity .18s}
@@ -57,5 +57,5 @@
 .closing-read{padding:30px 36px;background:linear-gradient(115deg,#edf4ff,#f0edff);border:1px solid #d5e2f9;border-radius:24px}.buying-guide .closing-read h2{font-size:30px;margin-top:32px}.buying-guide .closing-read h2:first-of-type{margin-top:12px}.buying-guide .closing-read p{font-size:17px}
 .buying-guide a:focus-visible,.comparison-wrap:focus-visible{outline:3px solid #3075e5;outline-offset:4px}
 @media(max-width:950px){.chart-grid{grid-template-columns:1fr}.price-row{grid-template-columns:155px 1fr 54px}.axis-labels{margin-left:165px}.chart-unit{white-space:normal}}
-@media(max-width:700px){.buying-guide .article-shell{padding:30px 16px 60px}.buying-guide .article-hero{padding:28px 24px;border-radius:22px}.buying-guide .article-hero h1{font-size:39px}.hero-tags span{font-size:12px}.decision-strip,.tools-grid{grid-template-columns:1fr}.decision-strip{gap:10px}.decision-strip section{padding:18px}.cost-dashboard{padding:22px 16px;border-radius:22px}.dashboard-head{display:block}.chart-unit{display:inline-block;margin-top:16px}.monthly-chart,.tier-chart{padding:21px 16px}.price-row{grid-template-columns:112px 1fr 46px;gap:8px}.price-row>span{font-size:12px}.axis-labels{margin-left:120px;margin-right:54px}.buying-guide .cost-dashboard h2{font-size:28px}.buying-guide .tool-entry{padding:25px 22px}.buying-guide .comparison-heading h2{font-size:32px}.closing-read{padding:24px}.buying-guide .site-header nav{gap:14px;overflow-x:auto;white-space:nowrap;max-width:56vw}.buying-guide .site-header .logo{font-size:15px}}
+@media(max-width:700px){.buying-guide .article-shell{padding:30px 16px 60px}.buying-guide .article-hero{padding:28px 24px;border-radius:22px}.buying-guide .article-hero h1{font-size:39px}.hero-tags span{font-size:12px}.decision-strip,.tools-grid{grid-template-columns:1fr}.decision-strip{gap:10px}.decision-strip section{padding:18px}.cost-dashboard{padding:22px 16px;border-radius:22px}.dashboard-head{display:block}.chart-unit{display:inline-block;margin-top:16px}.monthly-chart,.tier-chart{padding:21px 16px}.price-row{grid-template-columns:112px 1fr 46px;gap:8px}.price-row>span{font-size:12px}.axis-labels{margin-left:120px;margin-right:54px}.buying-guide .article-body .cost-dashboard h2{font-size:28px}.buying-guide .tool-entry{padding:25px 22px}.buying-guide .comparison-heading h2{font-size:32px}.closing-read{padding:24px}.buying-guide .site-header nav{gap:14px;overflow-x:auto;white-space:nowrap;max-width:56vw}.buying-guide .site-header .logo{font-size:15px}}
 @media(prefers-reduced-motion:reduce){.price-row,.tool-entry,.subscription-table tr{transition:none!important}}
