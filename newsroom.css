@@ -65,3 +65,7 @@ body.new-home{--ink:#10213b;--copy:#48546a;--paper:#f7f5f0;--rule:#dcdedc;backgr
 }
 @media(max-width:460px){.new-home .story-grid{grid-template-columns:1fr}.story-art img{height:210px}.lead-art img{height:210px}.side-story{grid-template-columns:90px minmax(0,1fr)}.side-story h2,.side-compact h2{font-size:21px}}
 @media(prefers-reduced-motion:reduce){.story-art img{transition:none}.new-home .story-card:hover .story-art img{transform:none}}
+/* Override the previous homepage's more specific section rules. */
+.new-home .research .section-heading{max-width:none}
+.new-home .research .section-heading h2{font-size:clamp(32px,3.4vw,46px);line-height:1.13;color:#10213b}
+.new-home .story-card .story-art>span{color:#d5e0eb}
