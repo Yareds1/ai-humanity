@@ -77,3 +77,34 @@ body button:active,.button:active,.lead-read:active,.site-search:active{transfor
  .lead-read:hover>span,.site-header .logo:hover:before{transform:none!important}
  .site-header .logo:hover:before{transform:rotate(-25deg)!important}
 }
+
+
+/* Scroll polish and location cues, scoped to the homepage. */
+.new-home .site-header{
+ transition:padding 260ms var(--motion-ease),background-color 260ms ease,box-shadow 300ms ease,border-color 260ms ease;
+}
+.new-home .site-header.is-scrolled{
+ padding-top:13px;padding-bottom:13px;background:#fffffff5;border-color:#cbdcd0;box-shadow:0 10px 32px #173d2f12;
+}
+.new-home .site-header nav{gap:12px}
+.new-home .site-header nav a{padding:7px 9px;border-radius:99px}
+.new-home .site-header nav a[aria-current="location"]{background:#e7f1e9;color:#245d3c}
+.new-home .site-header nav a[aria-current="location"]:after{transform:scaleX(1);left:9px;right:9px;bottom:0;height:1px}
+.home-progress{position:fixed;left:0;top:0;right:0;height:2px;z-index:200;pointer-events:none;background:transparent}
+.home-progress>span{display:block;height:100%;background:#4d9470;transform:scaleX(0);transform-origin:left;will-change:transform}
+@media(prefers-reduced-motion:no-preference){
+ .new-home .reveal-ready{opacity:0;translate:0 20px;transition:opacity 650ms ease,translate 650ms var(--motion-ease),transform 320ms var(--motion-ease),box-shadow 320ms ease,border-color 260ms ease;transition-delay:var(--reveal-delay,0ms)}
+ .new-home .reveal-ready.is-revealed{opacity:1;translate:0 0;transition-delay:var(--reveal-delay,0ms)}
+ .new-home .reveal-ready:focus-within{opacity:1;translate:0 0;transition-delay:0ms}
+}
+@media(max-width:1000px){.new-home .site-header nav{gap:5px}.new-home .site-header nav a{padding-left:7px;padding-right:7px}}
+@media(max-width:760px){
+ .new-home .site-header,.new-home .site-header.is-scrolled{padding:13px 17px;gap:11px}
+ .new-home .site-header nav{gap:10px}
+ .new-home .site-header nav a{padding:5px 8px}
+ .new-home .site-header nav a[aria-current="location"]:after{bottom:0;left:8px;right:8px}
+}
+@media(prefers-reduced-motion:reduce){
+ .new-home .reveal-ready{opacity:1;translate:0 0;transition:none}
+ .new-home .site-header{transition:none}
+}

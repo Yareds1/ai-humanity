@@ -9,3 +9,55 @@ function positionFuturePanel(){
 mobile.addEventListener('change',positionFuturePanel);
 positionFuturePanel();
 })();
+
+/* Progressive enhancement: all content remains visible without this script. */
+(()=>{
+ const header=document.querySelector('.site-header');
+ const links=[...header.querySelectorAll('a[href^="#"]')];
+ const sections=links.map(link=>({link,section:document.querySelector(link.getAttribute('href'))})).filter(item=>item.section);
+ const progress=document.createElement('div');
+ progress.className='home-progress';progress.setAttribute('aria-hidden','true');
+ const bar=document.createElement('span');progress.append(bar);document.body.append(progress);
+ let active=null,compact=false,queued=false;
+ const update=()=>{
+   const y=scrollY;
+   compact=compact?y>30:y>120;
+   header.classList.toggle('is-scrolled',compact);
+   const boundary=header.getBoundingClientRect().bottom+45;
+   let current=sections[0];
+   for(const item of sections){if(item.section.getBoundingClientRect().top<=boundary)current=item;}
+   if(current&&current!==active){
+     for(const item of sections){
+       if(item===current)item.link.setAttribute('aria-current','location');
+       else item.link.removeAttribute('aria-current');
+     }
+     active=current;
+   }
+   const max=document.documentElement.scrollHeight-innerHeight;
+   bar.style.transform='scaleX('+(max>0?Math.max(0,Math.min(1,y/max)):0)+')';
+   queued=false;
+ };
+ const schedule=()=>{if(!queued){queued=true;requestAnimationFrame(update);}};
+ addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule);
+ if('ResizeObserver' in window)new ResizeObserver(schedule).observe(document.querySelector('main'));
+ update();
+ const motion=matchMedia('(prefers-reduced-motion: reduce)');
+ let observer;
+ const items=[...document.querySelectorAll('.front-sidebar .side-story,.news-quick-grid>a,#archive .section-heading,.story-entry,.pulse-head,.pulse-card,.toolkit-head,.tk-chart,.tk-categories,.tk-reach,.futures-head,.robust-grid article,.follow-strip')];
+ const revealAll=()=>{observer?.disconnect();items.forEach(item=>item.classList.remove('reveal-ready','is-revealed'));};
+ const start=()=>{
+   if(motion.matches||!('IntersectionObserver' in window)){revealAll();return;}
+   observer?.disconnect();
+   observer=new IntersectionObserver(entries=>{
+     entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-revealed');observer.unobserve(entry.target);}});
+   },{threshold:.08,rootMargin:'0px 0px 30px 0px'});
+   items.forEach((item,i)=>{
+     // Content already in view stays visible, including direct anchor visits.
+     const rect=item.getBoundingClientRect();
+     if(rect.top<innerHeight&&rect.bottom>0)return;
+     item.style.setProperty('--reveal-delay',((i%3)*60)+'ms');
+     item.classList.add('reveal-ready');observer.observe(item);
+   });
+ };
+ motion.addEventListener('change',start);start();
+})();
