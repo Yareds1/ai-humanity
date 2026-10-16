@@ -6,8 +6,9 @@
 #archive .research-reset{border:0;border-bottom:1px solid currentColor;background:none;padding:4px 0;font:700 12px 'DM Sans',sans-serif;color:#286b50;cursor:pointer;white-space:nowrap}
 #archive .research-reset[hidden]{display:none}
 #archive .research-tools{display:flex;align-items:center;flex-direction:row;gap:20px;margin:0 0 18px}
-#archive .research-search{flex:1;max-width:none;border:1px solid #c4d5c7;border-radius:12px;padding:13px 15px;background:#fff}
-#archive .research-search input{font-size:16px;min-width:0}
+#archive .research-search{display:flex;align-items:center;gap:10px;flex:1;max-width:none;min-width:0;border:1px solid #c4d5c7;border-radius:12px;padding:13px 15px;background:#fff}
+#archive .research-search svg{width:18px;height:18px;flex:0 0 18px;color:#7a9182}
+#archive .research-search input{width:100%;border:0;background:transparent;color:#233d30;outline:none;font-size:16px;min-width:0}
 #archive .research-search:focus-within{border-color:#286b50;box-shadow:0 0 0 3px #286b5020}
 #archive .research-count{font-size:12px;line-height:1.5;color:#55715e;min-width:110px}
 #archive .research-browser .filter-row{display:flex;gap:8px;flex-wrap:wrap;padding:0;margin:0;border:0}
