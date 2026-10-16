@@ -1,0 +1,100 @@
+/* Data visualization component, extracted from publisher.css. */
+
+
+
+
+
+.new-home .toolkit-table-wrap{overflow-x:auto;border:1px solid #d9e3f3;border-radius:16px;box-shadow:0 12px 34px rgba(23,63,138,.05)}
+.new-home .toolkit-table{width:100%;border-collapse:collapse;background:#fff;min-width:880px}
+.new-home .toolkit-table th{background:#0b1f4d!important;color:#fff!important;text-align:left;padding:15px 17px;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.new-home .toolkit-table td{padding:18px 17px;border-bottom:1px solid #e6edf7;color:#53647a;font-size:13px;line-height:1.45;vertical-align:top}
+.new-home .toolkit-table tr:last-child td{border-bottom:0}
+.new-home .toolkit-table td:first-child{color:#2563eb;font-weight:800;width:48px}
+.new-home .toolkit-table td:nth-child(2){color:#10213b;font-size:15px;white-space:nowrap}
+.new-home .toolkit-table td:nth-child(3){color:#263b58;font-weight:650}
+.new-home .toolkit-table tbody tr:hover{background:#f7faff}
+.new-home .tk-pick{display:inline-block;background:#eaf2ff;color:#1d5fc4;border:1px solid #cbdcf5;border-radius:999px;padding:3px 7px;margin:0 5px 3px 0;font-size:9px;font-weight:800;letter-spacing:.06em}
+.new-home .toolkit-method{display:flex;justify-content:space-between;gap:28px;margin-top:17px;color:#66778d;font-size:11px;line-height:1.55}
+.new-home .toolkit-method strong{color:#263b58}.new-home .toolkit-method a{color:#2563eb;text-decoration:none}.new-home .toolkit-method span{white-space:nowrap;color:#173f8a;font-weight:700}
+@media(max-width:800px){.new-home .toolkit-method{display:block}.new-home .toolkit-method span{display:block;white-space:normal;margin-top:10px}}
+
+
+/* AI Toolkit visual summary */
+.new-home .toolkit-viz{display:grid;grid-template-columns:1.25fr .75fr;gap:16px;margin:0 0 20px}
+.new-home .tk-chart,.new-home .tk-categories{border:1px solid #dbe5f3;border-radius:18px;padding:26px;background:#fbfdff;box-shadow:0 10px 30px rgba(23,63,138,.045)}
+.new-home .tk-chart-heading{display:flex;align-items:start;justify-content:space-between;gap:18px}
+.new-home .tk-kicker{display:block;color:#2563eb;font-size:10px;font-weight:850;letter-spacing:.12em;margin-bottom:7px}
+.new-home .tk-chart h3,.new-home .tk-categories h3{color:#0b1f4d;font-size:24px;line-height:1.1;letter-spacing:-.025em;margin:0}
+.new-home .tk-chart-unit{color:#718198;font-size:10px;font-weight:750;white-space:nowrap;padding-top:4px}
+.new-home .tk-chart-sub{color:#718198;font-size:12px;line-height:1.5;margin:9px 0 22px}
+.new-home .tk-bars{display:grid;gap:13px}
+.new-home .tk-bar-row{display:grid;grid-template-columns:138px 1fr 44px;gap:12px;align-items:center}
+.new-home .tk-bar-row>span{color:#344861;font-size:11px;font-weight:700}
+.new-home .tk-bar-row>b{color:#10213b;font-size:11px;text-align:right}
+.new-home .tk-track{height:10px;background:#e9eff7;border-radius:999px;overflow:hidden}
+.new-home .tk-track i{display:block;width:var(--w);height:100%;background:var(--bar);border-radius:999px;box-shadow:inset 0 -1px 0 rgba(0,0,0,.08)}
+.new-home .tk-chart-note{color:#8794a6;font-size:10px;line-height:1.45;margin:18px 0 0}
+.new-home .tk-categories{background:linear-gradient(145deg,#f8fbff,#eef5ff)}
+.new-home .tk-cat-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:20px}
+.new-home .tk-cat{position:relative;overflow:hidden;background:var(--tint);border:1px solid color-mix(in srgb,var(--accent) 18%,white);border-radius:12px;padding:15px 14px 14px;min-height:104px}
+.new-home .tk-cat:before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--accent)}
+.new-home .tk-cat span{display:block;color:var(--accent);font-size:8px;font-weight:850;letter-spacing:.08em;margin-bottom:14px}
+.new-home .tk-cat b{display:block;color:#10213b;font-size:15px;margin-bottom:4px}
+.new-home .tk-cat small{color:#687990;font-size:10px;line-height:1.35}
+@media(max-width:900px){.new-home .toolkit-viz{grid-template-columns:1fr}.new-home .tk-categories{background:#f8fbff}}
+@media(max-width:600px){.new-home .tk-chart,.new-home .tk-categories{padding:20px}.new-home .tk-bar-row{grid-template-columns:105px 1fr 40px;gap:8px}.new-home .tk-cat-grid{grid-template-columns:1fr 1fr}.new-home .tk-chart h3,.new-home .tk-categories h3{font-size:21px}}
+
+
+/* Toolkit dashboard refinement */
+.new-home .toolkit-dashboard{align-items:stretch}
+.new-home .toolkit-dashboard .tk-chart{background:linear-gradient(145deg,#ffffff 0%,#f5f9ff 100%);border-color:#d5e2f4}
+.new-home .toolkit-dashboard .tk-categories{background:linear-gradient(145deg,#0b1f4d 0%,#153d82 100%);border:0;box-shadow:0 16px 38px rgba(11,31,77,.16)}
+.new-home .toolkit-dashboard .tk-categories .tk-kicker{color:#8fc0ff}
+.new-home .toolkit-dashboard .tk-categories>h3{color:#fff}
+.new-home .toolkit-dashboard .tk-cat{box-shadow:0 7px 18px rgba(4,20,51,.12);transition:transform .18s ease,box-shadow .18s ease}
+.new-home .toolkit-dashboard .tk-cat:hover{transform:translateY(-2px);box-shadow:0 11px 24px rgba(4,20,51,.18)}
+.new-home .toolkit-dashboard .tk-track{height:13px;background:#e7edf6;box-shadow:inset 0 1px 2px rgba(16,33,59,.06)}
+.new-home .toolkit-dashboard .tk-track i{position:relative}
+.new-home .toolkit-dashboard .tk-track i:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.22),rgba(255,255,255,0))}
+.new-home .toolkit-dashboard .tk-bar-row{grid-template-columns:145px 1fr 48px}
+.new-home .toolkit-dashboard .tk-bar-row>span{font-size:12px}
+.new-home .toolkit-dashboard .tk-bar-row>b{font-size:12px}
+.new-home .tk-chart-footer{display:grid;grid-template-columns:1fr 1fr 1fr;margin:8px 48px 0 157px;color:#9aa7b8;font-size:9px}
+.new-home .tk-chart-footer span:nth-child(2){text-align:center}.new-home .tk-chart-footer span:last-child{text-align:right}
+.new-home .tk-data-key{display:flex;align-items:center;gap:9px;margin-top:18px;padding-top:15px;border-top:1px solid rgba(255,255,255,.14);color:#c7d8ef;font-size:10px;line-height:1.4}
+.new-home .tk-data-key i{width:8px;height:8px;border-radius:50%;background:#60a5fa;box-shadow:0 0 0 4px rgba(96,165,250,.14);flex:0 0 auto}
+.new-home .tk-data-key strong{color:#fff}
+@media(max-width:600px){.new-home .toolkit-dashboard .tk-bar-row{grid-template-columns:108px 1fr 43px}.new-home .tk-chart-footer{margin-left:116px;margin-right:43px}.new-home .toolkit-dashboard .tk-cat-grid{grid-template-columns:1fr 1fr}}
+
+
+/* Rich Toolkit — logos, traffic metrics, color, motion */
+.new-home .tk-reach{margin:18px 0 20px;padding:27px 28px 24px;border:1px solid #d8e4f3;border-radius:18px;background:linear-gradient(135deg,#071a3d 0%,#102e67 58%,#17478d 100%);box-shadow:0 18px 45px rgba(11,31,77,.14);overflow:hidden;position:relative}
+.new-home .tk-reach:after{content:"";position:absolute;width:240px;height:240px;border-radius:50%;right:-90px;top:-130px;background:radial-gradient(circle,rgba(96,165,250,.22),rgba(96,165,250,0) 70%);pointer-events:none}
+.new-home .tk-reach-head{display:flex;justify-content:space-between;align-items:flex-start;gap:18px;margin-bottom:22px}
+.new-home .tk-reach .tk-kicker{color:#8fc0ff}.new-home .tk-reach h3{margin:0;color:#fff;font-size:25px;letter-spacing:-.025em}
+.new-home .tk-log-label{font-size:9px;letter-spacing:.1em;font-weight:800;color:#a9c9f5;border:1px solid rgba(169,201,245,.25);border-radius:999px;padding:6px 9px}
+.new-home .tk-reach-bars{display:grid;grid-template-columns:1fr 1fr;gap:11px 32px;position:relative;z-index:1}
+.new-home .tk-reach-bars>div{display:grid;grid-template-columns:92px 1fr 55px;gap:10px;align-items:center}
+.new-home .tk-reach-bars span{color:#dce9fb;font-size:10px;font-weight:700}
+.new-home .tk-reach-bars i{display:block;height:8px;border-radius:999px;background:rgba(255,255,255,.11);overflow:hidden}
+.new-home .tk-reach-bars em{display:block;width:var(--reach);height:100%;border-radius:999px;background:var(--brand);animation:tkGrow .9s cubic-bezier(.2,.7,.2,1) both;transform-origin:left;box-shadow:0 0 14px color-mix(in srgb,var(--brand) 55%,transparent)}
+.new-home .tk-reach-bars b{color:#fff;font-size:10px;text-align:right;font-variant-numeric:tabular-nums}
+.new-home .tk-reach .tk-chart-note{color:#9fb5d3;margin-top:19px}
+@keyframes tkGrow{from{transform:scaleX(0);opacity:.35}to{transform:scaleX(1);opacity:1}}
+.new-home .tk-rich-table tbody tr{background:linear-gradient(90deg,var(--tint) 0%,#fff 15%,#fff 100%);transition:transform .16s ease,box-shadow .16s ease,background .16s ease}
+.new-home .tk-rich-table tbody tr:hover{background:linear-gradient(90deg,var(--tint) 0%,#fff 36%);box-shadow:inset 4px 0 0 var(--brand),0 8px 22px rgba(23,63,138,.07)}
+.new-home .tk-rich-table td:first-child{color:var(--brand)}
+.new-home .tk-product{display:flex;align-items:center;gap:10px;min-width:145px}
+.new-home .tk-logo{width:38px;height:38px;display:grid;place-items:center;flex:0 0 38px;border-radius:11px;background:#fff;border:1px solid color-mix(in srgb,var(--brand) 22%,#e3eaf5);box-shadow:0 5px 14px rgba(16,33,59,.08);transition:transform .18s ease,box-shadow .18s ease}
+.new-home .tk-logo img{width:23px;height:23px;object-fit:contain;display:block}
+.new-home .tk-rich-table tr:hover .tk-logo{transform:translateY(-2px) scale(1.06);box-shadow:0 8px 18px color-mix(in srgb,var(--brand) 18%,transparent)}
+.new-home .tk-product strong{font-size:14px;color:#10213b}
+.new-home .tk-metric{display:inline-flex;flex-direction:column;gap:2px;color:var(--brand);font-size:13px;font-weight:850;font-variant-numeric:tabular-nums}
+.new-home .tk-metric small{font-size:7px;letter-spacing:.08em;color:#8794a6;font-weight:800}
+.new-home .tk-rich-table .tk-pick{background:var(--tint);color:var(--brand);border-color:color-mix(in srgb,var(--brand) 20%,#dbe5f3)}
+.new-home .tk-source-note{padding:12px 16px;background:#f7f9fc;border-top:1px solid #e3eaf4;color:#7b899c;font-size:9px;line-height:1.5}
+@media(max-width:900px){.new-home .tk-reach-bars{grid-template-columns:1fr}.new-home .tk-reach{padding:23px 20px}.new-home .tk-rich-table{min-width:1040px}}
+@media(max-width:600px){.new-home .tk-reach-head{display:block}.new-home .tk-log-label{display:inline-block;margin-top:10px}.new-home .tk-reach-bars>div{grid-template-columns:82px 1fr 48px}.new-home .tk-reach-bars{gap:10px}.new-home .tk-reach h3{font-size:22px}}
+@media(prefers-reduced-motion:reduce){.new-home .tk-reach-bars em,.new-home .tk-logo,.new-home .tk-rich-table tbody tr{animation:none;transition:none}}
+
+
