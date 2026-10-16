@@ -1,0 +1,42 @@
+/* Focused homepage editorial refinement. Loaded last to avoid modifying legacy themes. */
+@media (min-width: 1101px) {
+  .new-home .front-page { max-width: 1240px; }
+  .new-home .front-grid { grid-template-columns: minmax(0, 1fr) 292px; gap: 34px; }
+  .new-home .lead-main { grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 30px; align-items: center; }
+  .new-home .lead-art { order: 0; min-width: 0; }
+  .new-home .lead-art img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+  .new-home .front-sidebar { padding-left: 28px; }
+}
+.new-home .front-page { isolation: isolate; }
+.new-home .lead-copy h1 { text-wrap: balance; }
+.new-home .lead-deck { max-width: 54ch; text-wrap: pretty; }
+.new-home .side-story h2 { text-wrap: balance; }
+.new-home .lead-art img, .new-home .side-story img { display: block; }
+.new-home .lead-read:focus-visible, .new-home .side-story:focus-visible,
+.new-home .lead-copy h1 a:focus-visible { outline: 3px solid #168ab4; outline-offset: 4px; }
+@media (min-width: 761px) and (max-width: 1100px) {
+  .new-home .front-grid { grid-template-columns: minmax(0, 1fr) minmax(225px, 30%); gap: 24px; }
+  .new-home .lead-main { grid-template-columns: 1fr; }
+  .new-home .lead-art { order: -1; }
+}
+@media (max-width: 760px) {
+  .new-home .front-grid, .new-home .lead-main { grid-template-columns: minmax(0, 1fr); }
+  .new-home .lead-copy h1 { font-size: clamp(31px, 8.5vw, 39px); line-height: 1.08; }
+  .new-home .lead-art { order: -1; }
+  .new-home .front-sidebar { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .new-home .side-story { min-width: 0; }
+  .new-home .side-story img { max-width: 100%; }
+}
+@media (max-width: 430px) {
+  .new-home .front-sidebar { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .new-home .front-sidebar > .eyebrow, .new-home .front-sidebar .side-third { grid-column: auto; }
+  .new-home .front-sidebar .side-story { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 12px; align-items: start; }
+  .new-home .front-sidebar .side-story > img { width: 96px; height: 92px; object-fit: cover; }
+  .new-home .front-sidebar .side-story h2 { font-size: 17px; line-height: 1.22; }
+  .new-home .front-sidebar .side-story p { display: none; }
+  .new-home .front-sidebar .side-story small { margin: 0 0 5px; }
+  .new-home .front-sidebar .side-third { border-top: 1px solid #d8e1e8; padding-top: 15px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .new-home .lead-read, .new-home .side-story { transition: none; }
+}
